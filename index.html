@@ -1,214 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <link rel="stylesheet" href="includes/css/styles.css"/>
-</head>
-<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-<div class="dropdown" style="float:left;">
-  <button class="dropbtn">Forest</button>
-  <div class="dropdown-content" style="left:0;">
-  	<a href="#">Indian</a>
-  	<a href="#">USA</a>
-  	<a href="#">UK</a>
-  </div>
-</div>
-<div class="dropdown" style="float:right;">
-  <button class="dropbtn">Animals</button>
-  <div class="dropdown-content">
-  	<a href="#">Birds</a>
-  	<a href="#">Animals</a>
-  	<a href="#">Creature</a>
-  </div>
-</div>
+<html>
+	<head>
+		
+		<!-- Website Title & Description-->
+		<title>Forest</title>
+		<meta name="description" content="Responsive Website">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Forest</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav><br><br>
-
-<!-- First Container -->
-<<div class="carousel slide" id="myCarousel">
-            
-<div class="container">
+        <!--keywords specified-->
+		<meta name="keywords" content="C++ tutoril,Java tutorial,Python tutorial,Learn to code,Code PlayGround">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	
+		<div class="container" id="main">
+		
+			<div class="navbar navbar-fixed-top" id="navbar">
+				<div class="container" id="navbar1">
+					
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				
+					<h1 class="navbar-brand" style="font-size:36px;color:black;">Forest</h1>
+					
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav pull-right" id="navbar1">
+							<li class="dropdown" class="active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black" >country<strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li><a href="#">India</a></li>
+					                <li><a href="#">USA</a></li>
+									<li><a href="#">UK</a></li>	
+									<li><a href="#">AUS</a></li>
+									<li><a href="#">NZ</a></li>
+                                </ul><!-- end dropdown-menu -->
+							</li>
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Top Forests<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Daintree Forest</a></li>
+									<li><a href="#">Crooked Forest</a></li>
+									<li><a href="#">Jiuzhaigou Valley</a></li>
+									<li><a href="#">Redwood National Park</a></li>
+									</ul><!-- end dropdown-menu -->
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Blog<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">RecentPosts</a></li>
+									<li><a href="#">RecentNews</a></li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+							<li class="dropdown"><button id="btn1">sign in</button></li>
+						</ul>	
+					</div><!-- end nav-collapse -->
+				</div><!-- end container -->
+			</div><!-- end navbar -->
+			
+			
+			<div class="carousel slide" id="myCarousel">
+			
+			<div class="container">  
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-   <!-- Indicators -->
-   <ol class="carousel-indicators">
-     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-     <li data-target="#myCarousel" data-slide-to="1"></li>
-     <li data-target="#myCarousel" data-slide-to="2"></li>
-   </ol>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-   <!-- Wrapper for slides -->
-   <div class="carousel-inner">
-     <div class="item active">
-       <img class="arc2" src="images/cheetha.png" alt="Los Angeles" style="width:100%;">
-     </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
 
-     <div class="item">
-       <img class="arc2" src="images/bird3.png" alt="Chicago" style="width:100%;">
-     </div>
-
-     <div class="item">
-       <img class="arc2" src="images/elephant.png" alt="New york" style="width:100%;">
-     </div>
-   </div>
-
-   <!-- Left and right controls -->
-   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-     <span class="glyphicon glyphicon-chevron-left"></span>
-     <span class="sr-only"></span>
-   </a>
-   <a class="right carousel-control" href="#myCarousel" data-slide="next">
-     <span class="glyphicon glyphicon-chevron-right"></span>
-     <span class="sr-only"></span>
-   </a>
-</div>
-</div>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p class="text">
-  	A forest is a large area dominated by trees.Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function. According to the widely used Food and Agriculture Organization definition, forests covered 4 billion hectares (9.9×109 acres) (15 million square miles) or approximately 30 percent of the world's land area in 2006.Forests are the dominant terrestrial ecosystem of Earth, and are distributed around the globe.Forests account for 75% of the gross primary production of the Earth's biosphere, and contain 80% of the Earth's plant biomass. Net primary production is estimated at 21.9 gigatonnes carbon per year for tropical forests, 8.1 for temperate forests, and 2.6 for boreal forests.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img class="arc" src="./images/bird.png" class="img-responsive margin" style="width:100%" alt="Bird">
+    	<div class="item active">
+        <img src="img/bird3.png" alt="Learn coding" style="width:100%;height:100%">
+        </div>
+        <div class="item">
+        <img src="img/bird2.png" alt="Learn coding" style="width:100%;height:100%">
+        </div>
+        <div class="item">
+        <img src="img/cat.png" alt="Learn coding" style="width:100%;height:100%">
+        </div>
+        <div class="item">
+        <img src="img/cheetha.png" alt="Learn coding" style="width:100%;height:100%">
+        </div>
     </div>
-    <div class="col-sm-4"> 
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img class="arc" src="./images/cat.png" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img class="arc" src="./images/bird2.png" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
   </div>
 </div>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1>The Most Beautiful Forests in the World</h1>      
-    <ul>
-    	<li>Great Otway National Park.</li>
-    	<li>Amazon rainforest</li>
-    	<li>Black Forest. Germany</li>
-    	<li>Gir Forest,India</li>
-    </ul>
-  </div>
+</div><!-- end myCarousel -->	
+			
+
+<div class="row">
+				<div class="col-12">
+					<!-- Visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Contact us here!</a>
+					</div><!-- end well-small -->
+					
+					<div class="well">
+						<div class="page-header">
+							<h1>Learn about Forest for FREE</h1>
+						</div><!-- end page-header -->
+						
+						<p class="lead">Now social learning is here!</p>
+						
+						<a href="" class="btn btn-large btn-primary" id="alertMe">Start Learning now</a>
+					</div><!-- end well -->
+					
+				</div><!-- end col-12 -->
 </div>
+          <div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>Types of Forests</h2>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+			
+			
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Tropical</h3>
+						</div><!-- end panel-heading -->
+						<img src="img/img1.png" alt="forest" class="img-circle" style="width:200px;height:200px">
+						
+						<p>
+                        Tropical forests are characterized by the greatest diversity of species. They occur near the equator, within the area bounded by latitudes 23.5 degrees N and 23.5 degrees S. One of the major characteristics of tropical forests is their distinct seasonality: winter is absent, and only two seasons are present .
+	                    </p>
+						
+						<a href="https://www.sololearn.com/Course/CPlusPlus/" target="_blank" class="btn btn-warning btn-block">tropical</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Temperate</h3>
+						</div><!-- end panel-heading -->
+						<img src="img/img3.png" alt="forests" class="img-circle" style="width:200px;height:200px">
+					
+						<p>
+                        Temperate forests occur in eastern North America, northeastern Asia, and western and central Europe. Well-defined seasons with a distinct winter characterize this forest biome. Moderate climate and a growing season of 140-200 days during 4-6 frost-free months distinguish temperate forests.
+                    </p>
+						
+						<a href="https://www.sololearn.com/Course/Python/" target="_blank" class="btn btn-danger btn-block">temperate</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Boreal forests (taiga)</h3>
+						</div><!-- end panel-heading -->
+						<img src="img/img2.png" alt="forests" class="img-circle" style="width:200px;height: 200px">
+						
+						<p>
+                        Boreal forests, or taiga, represent the largest terrestial biome. Occuring between 50 and 60 degrees north latitudes, boreal forests can be found in the broad belt of Eurasia and North America: two-thirds in Siberia with the rest in Scandinavia, Alaska, and Canada in boreal forests is 130 days.
+                    </p>
+						
+						<a href="https://www.sololearn.com/Course/Java/" target="_blank" class="btn btn-info btn-block">boreal forests</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			
 
 
-<!-- Google Maps -->
-
-<div class="container"><h1>wonder full forest location</h1></div>
-<div id="exTab1" class="container">	
-<ul  class="nav nav-pills">
-			<li class="active">
-        <a  href="#1a" data-toggle="tab">Map</a>
-			</li>
-			<li><a href="#2a" data-toggle="tab">forest pics</a>
-			</li>
-</ul>
-
-			<div class="tab-content clearfix">
+		<div class="row" id="moreInfo">
+				<div class="col-12">
+					<h2 id="headingstyle"><strong>More about forest </strong></h2>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Step 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Step 2</a></li>
+							<li><a href="#tab3" data-toggle="tab">Step 3</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h2 class="tabheading">Choose what to know</h2>
+								
+								<img src="img/img3.png" alt="Choose" >
+								
+								
+								<p class="paragraphstyle">About 420 million years ago, during the Silurian Period, ancient plants and arthropods began to occupy the land. Over the millions of years that followed, these land colonizers developed and adapted to their new habitat.</p>
+								<hr>
+							</div>
+							<!-- end tab-pane -->
+							
+							<div class="tab-pane" id="tab2">
+								<h2 class="tabheading">Learn by searching</h2>
+								
+								<img src="img/img2.png" alt="Learn" >
+								
+								<p class="paragraphstyle">Life on Earth continued to evolve, and in the late Paleozoic, gymnosperms appeared. By the Triassic Period, gymnosperms dominated the Earth's forests. In the Cretaceous Period, the first flowering plants appeared.
+								</p>
+								
+								<hr>
+							</div>
+							<div class="tab-pane" id="tab3">
+								<h2 class="tabheading">Google Map</h2>
+								
+								<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="1a">
           			<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.555440207236!2d77.59953822779696!3d12.930917304120186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14531eedd659%3A0x3cde8534fb610682!2sS.G.+Palya%2C+Bengaluru%2C+Karnataka+560029!5e0!3m2!1sen!2sin!4v1557344459001!5m2!1sen!2sin"></iframe>
 				</div>
-				<div class="tab-pane" id="2a">
-                <img class="act" src="./images/forest.png" class="img-responsive margin" style="width:100%" alt="Image">
+								
+								
+								<p class="paragraphstyle">Present-day forest biomes, biological communities that are dominated by trees and other woody vegetation, can be classified according to numerous characteristics, with seasonality being the most widely used. Distinct forest types also occur within each of these broad groups.</p>
+								<hr>
 
-                 <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click here for Registration!</a>
-                                
-                                <div class="modal fade" id="myModal">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button class="close" data-dismiss="modal">&times;</button>
-                                                
-                                                <h4 class="modal-title">Registration Form</h4>
-                                            </div><!-- end modal-header -->
-                                            <div class="modal-body">
-                                                
-                                        
-                                                
-                                                <p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
-                                                
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="col-lg-2 control-label" for="inputName">Name</label>
-                                                        <div class="col-lg-10">
-                                                            <input class="form-control" id="inputName" placeholder="Name" type="text">
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="form-group">
-                                                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                                                        <div class="col-lg-10">
-                                                            <input class="form-control" id="inputEmail" placeholder="Email" type="email">
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="form-group">
-                                                        <label class="col-lg-2 control-label" for="inputMessage">Message</label>
-                                                        <div class="col-lg-10">
-                                                            <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-                                                            <button class="btn btn-success pull-right" type="submit">Send!</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div><!-- end modal-body -->
-                                            
-                                            <div class="modal-footer">
-                                                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
-                                            </div><!-- end modal-footer -->
-                                        </div><!-- end modal-content -->
-                                    </div><!-- end modal-dialog -->
-                                </div><!-- end myModal -->
+						</div><!-- end tab-content -->
+					</div><!-- end tabbable -->
 				</div>
-  </div>
+				<!-- end col-sm-6 -->
+				
+		    
+			<a href="#myModal" role="button" class="btn btn-primary"  data-toggle="modal" style="margin-left: 20px;font-size:25px"><span class="glyphicon glyphicon-hand-up"></span>Join Our Community</a>
+								
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+												
+												<h4 class="modal-title">A Modal Window</h4>
+											</div><!-- end modal-header -->
+											<div class="modal-body">
+												
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Address</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Send!</button>
+														</div>
+													</div>
+												</form>
+											</div><!-- end modal-body -->
+											
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Submit</button>
+											</div><!-- end modal-footer -->
+										</div><!-- end modal-content -->
+									</div><!-- end modal-dialog -->
+								</div><!-- end myModal -->							
+			
+			<hr>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6>Copyright &copy; 2013 Codecademy</h6>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-4">
+						<h5>AboutUs</h5>
+						<ul class="style1">
+             
+             <li class="style2"><a href="#">CreateAccount</a></li>
+             <li class="style2"><a href="#">Login</a></li>
+             <li class="style2"><a href="#">Careers</a></li>
+             <li class="style2"><a href="#">ContactUs</a></li>
+             <li class="style2"><a href="#">NewsandMedia</a></li>
+         </ul>
+					</div><!-- end col-sm-4 -->
+					
+					<div class="col-sm-2">
+						<h5>Navigation</h5>
+						<ul class="style1">
+							<li class="style2"><a href="#">Home</a></li>
+							<li class="style2"><a href="#">Services</a></li>
+							<li class="style2"><a href="#">Links</a></li>
+							<li class="style2"><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h5>Follow Us</h5>
+						<ul class="style1">
+							<li class="style2"><a href="#"><img src="img/facebook.png" class="imgstyle">Facebook</a></li>
+							<li class="style2"><a href="#"><img src="img/googleplus.png" class="imgstyle">Google Plus</a></li>
+							<li class="style2"><a href="#"><img src="img/instagram.jpeg" class="imgstyle">Instagram</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<!-- end col-sm-2 -->
+				</div> <!-- end row -->
+		</div> <!-- end container -->
+		
+	
 
+		<footer>
+			<div class="arc">
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center" style="width:100%;">
-  <p>More about forest<a href="https://en.wikipedia.org/wiki/Forest">www.forest.com</a></p> 
-  <p>Indian forest<a href="https://en.wikipedia.org/wiki/Nallamala_Hills">www.nallamala.com</a></p>
-</footer>
-
-</body>
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	</div>
+	</footer>
+	</body>
 </html>

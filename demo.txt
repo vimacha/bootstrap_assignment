@@ -1,0 +1,10 @@
+css minification in sublime text
+chrome
+visual code studio
+html5 boiler plate
+chrome developer tools
+screen reader
+chrome vox
+disable screen readers
+inspect  different views
+https://github.com/harshaharshi/html-demo.gi

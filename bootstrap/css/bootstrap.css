@@ -4673,3 +4673,6 @@ td.visible-print {
     display: none !important;
   }
 }
+.navbar navbar-fixed-top{
+  background-color:#fff2e6;
+}
